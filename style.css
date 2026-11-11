@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff4dc;
+  color: #2b2118;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #1e2a52;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 16px;
+}
+
+.logo {
+  font-size: 48px;
+  line-height: 1;
+}
+
+header h1 {
+  margin: 0;
+  color: #ffd166;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+
+header h3 {
+  margin: 2px 0 0;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 15px;
+}
+
+nav {
+  background-color: #ffd166;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e2a52;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: #1e2a52;
+  color: #ffd166;
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 92%;
+  max-width: 1100px;
+  margin: 16px auto;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+main section,
+main article {
+  background-color: #fff;
+  border: 2px solid #1e2a52;
+  border-radius: 14px;
+  padding: 16px 20px;
+  overflow: auto;
+}
+
+h2 {
+  margin-top: 0;
+  color: #1e2a52;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  border-bottom: 3px dotted #c1304f;
+  padding-bottom: 6px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  padding: 8px 10px;
+  margin-bottom: 6px;
+  background-color: #fff4dc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+li:hover {
+  background-color: #ffd166;
+}
+
+article {
+  background-color: #fff;
+}
+
+time {
+  font-weight: bold;
+  color: #c1304f;
+}
+
+address {
+  font-style: normal;
+  margin-top: 12px;
+  background-color: #fff4dc;
+  padding: 10px 14px;
+  border-left: 6px solid #c1304f;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  background-color: #1e2a52;
+  color: #fff4dc;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  html, body {
+    height: auto;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 26px;
+  }
+}
